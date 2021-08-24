@@ -36,7 +36,7 @@ body {
   font-size: 1rem;
 }
 .inputBar:focus {
-  box-shadow: 0 0 0 1.4px orange;
+  box-shadow: 0 0 0 1.4px rgb(48, 133, 86);
 }
 .title {
   margin-bottom: 3rem;
@@ -53,7 +53,13 @@ body {
   height: 45px;
   border-radius: 2px;
   transform: translateY(8px);
+  transition: .3s ease;
 }
+.todo-area{
+  max-height: 240px;
+  overflow-y: auto;
+}
+
 .todo {
   display: block;
   margin-top: 10px;
@@ -77,7 +83,9 @@ body {
   padding: 1.3em;
   border-radius: 4px;
   z-index: 9990;
+
 }
+
 .circle {
   height: 75px;
   width: 75px;
@@ -99,4 +107,9 @@ body {
   border-radius: 2px;
   cursor: pointer;
   line-height: 4px;
+}
+
+.disabled{
+  opacity: .6;
+  pointer-events: none;
 }

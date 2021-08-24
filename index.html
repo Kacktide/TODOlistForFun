@@ -20,15 +20,17 @@
       <div class="item">
         <div class="wrap">
           <h1 class="title">
-            TODO L<span style="color: rgb(250, 209, 217)">i</span>ST BY FURY
+            TODO L<span style="color: #fad1d9">i</span>ST BY FURY
           </h1>
           <input
             type="text"
             class="inputBar"
             placeholder="Type..."
             id="inputBar"
+            onkeyup="disable()"
           />
-          <button class="button-submit" onclick="todoCreate()">
+          <button class="button-submit disabled" id="main-btn" onclick="todoCreate()">
+            
             <ion-icon
               name="add-circle-outline"
               style="font-size: 30px"
